@@ -1,0 +1,136 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
+
+body {
+background: #070b14;
+color: white;
+}
+
+.container {
+display: flex;
+min-height: 100vh;
+}
+
+.sidebar {
+width: 240px;
+background: #0f172a;
+padding: 20px;
+display: flex;
+flex-direction: column;
+gap: 10px;
+position: fixed;
+height: 100%;
+}
+
+.sidebar h1 {
+margin-bottom: 20px;
+font-size: 28px;
+}
+
+.sidebar button {
+background: #1e293b;
+border: none;
+color: white;
+padding: 14px;
+border-radius: 12px;
+font-size: 15px;
+cursor: pointer;
+transition: 0.3s;
+}
+
+.sidebar button:hover {
+background: #2563eb;
+}
+
+.content {
+margin-left: 240px;
+padding: 20px;
+width: 100%;
+}
+
+.page {
+display: none;
+background: #111827;
+padding: 20px;
+border-radius: 18px;
+}
+
+.page.active {
+display: block;
+}
+
+input,
+textarea {
+width: 100%;
+padding: 14px;
+margin-top: 15px;
+background: #1e293b;
+border: none;
+border-radius: 12px;
+color: white;
+}
+
+textarea {
+height: 160px;
+resize: none;
+}
+
+button {
+margin-top: 15px;
+padding: 14px 20px;
+border: none;
+border-radius: 12px;
+background: #2563eb;
+color: white;
+font-size: 15px;
+cursor: pointer;
+}
+
+#ttResult,
+#igResult,
+#ytResult,
+#spResult,
+#musicResult,
+#iqcResult,
+#debugResult {
+margin-top: 20px;
+}
+
+.card {
+background: #1e293b;
+padding: 15px;
+border-radius: 14px;
+margin-top: 10px;
+}
+
+.card img {
+width: 100%;
+border-radius: 12px;
+margin-top: 10px;
+}
+
+.card a {
+color: #60a5fa;
+text-decoration: none;
+}
+
+@media (max-width: 768px) {
+.container {
+flex-direction: column;
+}
+
+.sidebar {
+position: relative;
+width: 100%;
+height: auto;
+}
+
+.content {
+margin-left: 0;
+padding: 15px;
+}
+}
